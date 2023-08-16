@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudheer portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3d7ae1f223.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo2.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Civil Engineer</p>
+                <h1>Hi, I'm <span>Sudheer Reddy</span></h1>
+            </div>
+        </div>
+    </div>
+    <!--------------------- ABOUT----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2061184.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Welcome to my portfolio website! I am a passionate civil engineer with a fresh perspective and a drive to make a positive impact on the world through my work. I believe that infrastructure plays a crucial role in shaping communities and improving the quality of life for everyone.
+                       
+                      I am well-versed in using computer-aided design (CAD) software and other engineering tools to bring my ideas to life and communicate them effectively.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('Achievements')">Achievements</p>
+                        
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>AutoCAD</span></li>
+                            <li><span>SketchUp</span></li>
+                            <li><span>C language</span></li>
+                            <li><span>SQL</span></li>
+                            <li><span>Python</span></li>
+                            <li><span>MS Word, Power Point, MS Excel</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>B.TECH (2019-2023)</span> <br> Aditya Engineering College - CGPA 8.36</li>
+                            <li><span>INTERMEDIATE (2017-2019)</span> <br> MNR Junior College - CGPA 9.94</li>
+                            <li><span>SSC (2017) </span><br>Satya Bhama E.M School - GPA 9.8</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Achievements">
+                        <ul>
+                            <li><span> Hacker Rank</span> <br> 
+                                <li>Secured 4 stars in SQL </li>
+                                <li>Secured 3 stars in Python </li>
+                            </li>
+                            <li><span> Certifications</span> <br> 
+                                <li>Google-Crash Course on python from Coursera </li>
+                                <li>SQL for data science from great learning </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <!-- ----------------SERVICES--------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Developer</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim commodi facilis quas? Perspiciatis deleniti iusto, omnis ab optio laborum corrupti neque minus cumque, mollitia quaerat quam laboriosam eligendi consequatur. Sed.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>construction planning</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim commodi facilis quas? Perspiciatis deleniti iusto, omnis ab optio laborum corrupti neque minus cumque, mollitia quaerat quam laboriosam eligendi consequatur. Sed.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <h2>Data Analyst</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim commodi facilis quas? Perspiciatis deleniti iusto, omnis ab optio laborum corrupti neque minus cumque, mollitia quaerat quam laboriosam eligendi consequatur. Sed.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------PORTFOLIO---------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">My work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="images/BIM_lifecycle_for_a_model_or_project.png">
+                    <div class="layer">
+                        <h3>Internship</h3>
+                        <p> BIM internship form L&T edutech</p>
+                        <a href="https://learn.lntedutech.com/Learner/coursereport?id=Y2c5MWo5OGk%3D&name=Building%20Information%20Modelling%20in%20Architecture,%20Engineering%20and%20Construction&batchId=NDkwOTAyNzQ1OTkzMTU1&QA_totalweeks=16&selflearning_totalweeks=14&credits=3&userId=ODZhMWF0"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/pir.png">
+                    <div class="layer">
+                        <h3>Project</h3>
+                        <p> Smart building using PIR(passive infrared) sensor</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/research paper.webp">
+                    <div class="layer">
+                        <h3>Research Paper</h3>
+                        <p>Investigation on sustainably developed concrete by
+                            valorizing granite waste as replacement of fine
+                            aggregates</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+    </div>
+    <!-- -----------------CONTACT---------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>kvskreddy55@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9849372115</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sudheerreddy.karri.9"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/invites/contact/?i=1cqtenr1dd7fo&utm_content=1ymu6lv"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sudheer-reddy-068016222"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Sudheer.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright sudheer.</p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+           event.currentTarget.classList.add("active-link");
+           document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+       
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyU958HVAXLyH9CKfgr0nDgrsafWsb_rocbn6K5hHj2X3DaTE6hnOXxZZighPO0_Pp9TQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then((response) => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
